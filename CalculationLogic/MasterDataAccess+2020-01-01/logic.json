@@ -1,0 +1,22 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 16,
+    "elementGroups" : [ ],
+    "elementLabel" : "UseFind",
+    "elementName" : "UseFind",
+    "elementTimeout" : 0,
+    "excludeFromExport" : false,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "overridden" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  } ],
+  "inputDescriptors" : [ ],
+  "label" : "MasterDataAccess",
+  "status" : "ACTIVE",
+  "uniqueName" : "MasterDataAccess",
+  "validAfter" : "2020-01-01"
+}
