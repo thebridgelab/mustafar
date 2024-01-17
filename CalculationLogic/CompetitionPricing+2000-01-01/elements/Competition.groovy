@@ -63,3 +63,4 @@ if ( compPrice == null || compPrice == 0 ) {
     api.trace("Returned Map",compPrice)
     return compPrice
 }
+
