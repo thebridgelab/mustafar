@@ -23,18 +23,8 @@ jobs:
 
       - name: Install Gradle
         run: |
-          ls -la
-          sudo apt-get update
-          sudo apt-get install -y gradle
+          ./gradlew --version
           ls -la 
-
-      - name: Cache Gradle dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
         
       - name: Build with Gradle
         run: ./gradlew clean build assemble
