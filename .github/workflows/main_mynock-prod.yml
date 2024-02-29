@@ -26,6 +26,7 @@ jobs:
           ls -la
           sudo apt-get update
           sudo apt-get install -y gradle
+          ls -la 
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v2
