@@ -23,8 +23,7 @@ jobs:
 
       - name: Install Gradle
         run: |
-          ./gradlew --version
-          ls -la 
+          ls -la /home/runner/work/mustafar/* 
         
       - name: Build with Gradle
         run: ./gradlew clean build assemble
