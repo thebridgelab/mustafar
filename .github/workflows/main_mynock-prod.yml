@@ -20,7 +20,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '17'
-          
+
+      - name: Check Gradle Executable
+        run: chmod +x gradlew
+        
       - name: Build with Gradle
         run: ./gradlew clean build assemble
 
@@ -33,7 +36,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
             app-name: 'mynock-prod'
-            package: build/libs/*.jar
+            package: build/libs/*
 
   
   deploy:
